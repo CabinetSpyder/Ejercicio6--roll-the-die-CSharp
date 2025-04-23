@@ -1,12 +1,16 @@
+
 public class Player
 {
+    private Random random = new Random();
+
     public int RollDie()
     {
-        throw new NotImplementedException("Please implement the Player.RollDie() method");
+        return random.Next(1, 19);
     }
 
     public double GenerateSpellStrength()
     {
-        throw new NotImplementedException("Please implement the Player.GenerateSpellStrength() method");
+        double randomDouble = random.NextDouble() * 100;
+        return randomDouble;
     }
 }
